@@ -1,0 +1,17 @@
+<html>
+    <head><title>On Mouse Move Event</title></head>
+    <body>
+        <h2>Move Mouse/Cursor to get the x (horizontal) and y (vertical coordinates) of the mouse pointer.</h2>
+    <p id="pid"></p>
+    <img src="images.jpeg" onmousemove="disp();">
+    <script type="text/javaScript">
+        function disp()
+        {
+            let x = event.screenX; //screen vaneko as a browser whole ma line vo
+            let y = event.screenY;
+            let coords = "X coords: " + x + ", Y coords:"+y;
+            document.getElementById("pid").innerHTML = coords;   
+        }
+    </script>
+    </body>
+</html>

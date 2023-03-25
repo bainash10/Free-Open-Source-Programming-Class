@@ -1,0 +1,30 @@
+<html>
+<head>
+   <script type="text/javascript">
+    function insRow()
+    {
+        for(var i=0;i<10;i++)
+        {
+        var x=document.getElementById("myTable").insertRow(i+1);
+        var y=x.insertCell(i);
+        var z=x.insertCell(i+1);
+        y.innerHTML="<input type='text'>";
+        z.innerHTML="<input type='text'>";
+        }
+    }
+   </script> 
+</head>
+<body>
+    <table id="myTable" border="1">
+        <tr>
+            <td> C </td>
+            <td>OOP C++</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>C Programming</td>
+        </tr>
+    </table>
+    <input type="button" onclick="insRow()" value="Insert Row">
+</body>
+</html>

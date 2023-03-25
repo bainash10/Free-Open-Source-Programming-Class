@@ -1,0 +1,27 @@
+<html>
+<head>
+   <script type="text/javascript">
+    function insRow()
+    {
+        var x=document.getElementById("myTable").insertRow(0); //insertrow 0 le mathi aaucha  0 vaneko first row, 1 vaneko second and .....
+        var y=x.insertCell(0);
+        var z=x.insertCell(1);
+        y.innerHTML="FOSP";
+        z.innerHTML="Open Source";
+    }
+   </script> 
+</head>
+<body>
+    <table id="myTable" border="1">
+        <tr>
+            <td>C++</td>
+            <td>OOP C++</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>C Programming</td>
+        </tr>
+    </table>
+    <input type="button" onclick="insRow()" value="Insert Row">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script type="text/JavaScript">
+            function displayMessage(){
+                document.getElementById("message").innerHTML="You're in the textbox";
+            }
+            function hideMessage(){
+                document.getElementById("message").innerHTML="";
+            }
+
+        </script>
+        <style>
+            #message {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="textbox">Enter some Text</label>
+        <input type="text" id="textbox" onmouseover="displayMessage()" onmouseout="hideMessage()">
+        <p id="message"></p>
+   
+    </body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS variable</title>
+</head>
+<body>
+    <h2>JS Variable</h2>
+    <p>JS Let VS Var Keywords</p>
+    <p id="demo1"></p>
+    <script>
+        function example()
+        {
+            if(true)
+            {
+                var x=1;
+                let y=2;  //in exam dont use let, let le chai hamilai yeauta block ma matra kaam garna dincha jasle garda bug kaam aaucha. Bug kaam aaunu nai yesko importance ho.
+            }
+            console.log(x); // 1 print huncha
+            console.log(z);  // ReferenceError: y is not defined
+        }
+    </script>
+    <input type="button" value="Enter" onclick="example();">
+</body>
+</html>

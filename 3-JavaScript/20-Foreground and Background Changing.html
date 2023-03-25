@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>FoSP</title>
+        <script type="text/javascript">
+            function fg_color(abc)
+            {
+                if(abc=="--")
+                alert("please Select Color");
+                else
+                {
+                    document.fgColor = abc;
+                }
+            }
+                function bg_color(abc)
+                {
+                    if(abc=="--")
+                      alert("please Select Color");
+                else
+                {
+                    document.bgColor = abc;
+                }
+                }
+            
+        </script>
+    </head>
+    <body>
+        <h1>Khwopa Engineering College</h1>
+        <form name="frm1" method="post" action="">
+            Foreground Color
+            <select name="fcolor" onchange="fg_color(this.value);">
+            <option value="--">Please Select</option>
+            <option value="RED">RED</option>
+            <option value="Green">Green</option>
+            <option value="BLUE">Blue</option>
+            <option value="Yellow">Yellow</option>
+            </select><hr>
+            Background Color
+            <select name="bcolor" onchange="bg_color(this.value);">
+                <option value="--">Please Select</option>
+                <option value="PINK">PINK</option>
+                <option value="Green">Green</option>
+                <option value="BLUE">Blue</option>
+                <option value="Yellow">Yellow</option>
+                </select>
+        </form>
+    </body>
+</html>

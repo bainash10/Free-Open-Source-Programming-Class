@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Assignment</h1>
+    <h2>Bitwise LeftShift, AND, & OR Assignment</h2>
+    <h3>The << &= |= Operators</h3>
+    <p id="pid"></p>
+    <p id="aid"></p>
+    <p id="zid"></p>
+    <script type="text/JavaScript">
+        let x=10; 
+        x <<= 3;
+        document.getElementById("pid").innerHTML = "Value of x is: " + x;
+        
+        let y =10;
+        y &= 2;
+        document.getElementById("aid").innerHTML = "Value of y is: " + y;
+
+        let z =10;
+        z |= 2;
+        document.getElementById("zid").innerHTML = "Value of z is: " + z;
+    </script>
+</body>
+</html>
