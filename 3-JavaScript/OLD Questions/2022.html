@@ -1,0 +1,24 @@
+<!-- write a code for adding two numbers in Javascript where user enter the number from textbox. -->
+<html>
+    <head>
+        <title>2022</title>  
+    </head>
+    <body>
+
+        <script>
+            function add()
+            {
+                var a= parseInt(document.getElementById("first").value);
+                var b=parseInt(document.getElementById("Second").value);
+                var c= a+b;
+                document.getElementById("id2").value=c;
+            }
+        </script>
+        <input type="text" id="first" name="first">
+        <label for="first">first</label><br>
+        <input type="text" id="Second" name="second">
+        <label for="second">second</label><br>
+        <button onclick="add()">Add</button>
+        <div><input type="number" id="id2" disabled></div>
+    </body>
+    </html>
