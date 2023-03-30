@@ -1,0 +1,21 @@
+<html>
+    <head><title>Opening</title></head>
+    
+    <body>
+        <h1>The window Object</h1>
+        <h2>The open() and close() methods</h2>
+        <button onclick="open()">Open "MyWindow"</button>
+        <button onclick="close()">Close "MyWindow"</button>
+        <script>
+            let MyWindow;
+            function open()
+            {
+               MyWindow = window.open("","","width=200,height=100");
+            }
+            function close()
+            {
+                MyWindow.close();
+            }
+        </script>
+    </body>
+</html>
