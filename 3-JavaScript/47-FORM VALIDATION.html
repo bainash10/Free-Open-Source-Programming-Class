@@ -1,0 +1,83 @@
+<html>
+    <head><title>FORM VALIDATION</title>
+    <script type ="text/javascript">
+        function validate()
+        {
+            var x = document.myForm.email.value;
+            var atpos=x.indexOf('@');
+            var dotpos=x.lastIndexOf('.');
+            if(document.myForm.name.value == "")
+            {
+                alert("Please provide your name!");
+                document.myForm.name.focus();
+                return false;
+            }
+            if((document.myForm.name.value == "")||(atpos<1||dotpos<atpos+2||dotpos+2>=x.length))
+            {
+                alert("Please provide valid Email!");
+                document.myForm.email.focus();
+                return false;
+            }
+            if(document.myForm.zip.value == "" || isNaN ( document.myForm.zip.value ) || document.myForm.zip.value.length !=5 )
+            {   
+                
+                alert("Please provide a zip in the format #####.");
+                document.myForm.zip.focus();
+                return false;
+            }
+            if(document.myForm.country.value == "-1")
+            {
+                alert("Please provide your country!");
+                return false;
+            }
+            alert('All fields are filled. \n Thank you');
+            exit();
+        }
+    </script>
+    </head>
+    <body>
+       <form name="myform" onsubmit="return(validate());">
+        <table cellpadding="2" cellpadding="2" border="0">
+            <tr>
+                <td align="right">Name</td>
+                <td><input type="text" name="name"/></td>
+            </tr>
+            <tr>
+                <td align="right">Email</td>
+                <td><input type="text" name="email"/></td>
+            </tr>
+            <tr>
+                <td align="right">Zip Code</td>
+                <td><input type="text" name="zip"/></td>
+            </tr>
+            <tr>
+                <td align="right">country</td>
+                <td>
+                    <select name="country">
+                        <option value="-1" selected>--SELECT--</option>
+                        <option value="1">Nepal</option>
+                        <option value="2">China</option>
+                        <option value="3">Cuba</option>
+                        <option value="4">Korea</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"></td>
+                <td><input type="submit" value="submit"/></td>  
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

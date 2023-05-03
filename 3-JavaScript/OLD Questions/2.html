@@ -1,0 +1,21 @@
+<!-- WAP that asks user for names of 7 days from keyboard and store them in array. Display those names-->
+<html>
+    <head><Title>FOSP Old Question</Title></head>
+    <body>
+       <script>
+        var a = new Array();
+        
+        for (let i=0; i< 7; i++)
+        {
+           
+            a[i]=prompt();
+        }
+        document.write("Names of days are : ");
+        for (let i=0; i< 7; i++)
+        {
+            document.write("<br>");
+            document.write(a[i]);
+        }
+       </script> 
+    </body>
+</html>

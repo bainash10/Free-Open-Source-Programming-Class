@@ -1,0 +1,23 @@
+<!-- WAP that asks user for 10 numbers from keyboard and store them in array. Calculate their sum and average. -->
+<html>
+    <head><Title>FOSP Old Question</Title></head>
+    <body>
+       <script>
+        var a = new Array();
+        var sum = 0;
+        var average = 0;
+        for (let i=1; i< 10; i++)
+        {
+           
+            a[i]=prompt();
+            sum = sum + parseInt(a[i]);
+            average = sum/10;
+        }
+        document.write("Sum is : ");
+        document.write(sum); 
+        document.write("<br>");
+        document.write("Average is : ");
+        document.write(average);
+       </script> 
+    </body>
+</html>

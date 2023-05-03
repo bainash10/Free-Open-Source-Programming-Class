@@ -1,0 +1,19 @@
+<!-- WAP that asks user for 5 numbers from keyboard and store them in array. Display the smallest number-->
+<html>
+    <head><Title>FOSP Old Question</Title></head>
+    <body>
+       <script>
+        var a = new Array();
+        var temp;
+        for (let i=0; i< 5; i++)
+        {
+            a[i]=prompt();
+        }
+        a.sort();
+        document.write("Smallest Number is : ");
+            document.write("<br>");
+            document.write(a[0]);
+        
+       </script> 
+    </body>
+</html>
